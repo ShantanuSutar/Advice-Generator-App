@@ -30,7 +30,8 @@ body {
   background-color: var(--Dark-Blue);
 }
 .container {
-  width: 35%;
+  max-width: 35%;
+  min-width: 450px;
   height: 25%;
   margin-top: 12rem;
   background: orange;
@@ -70,4 +71,9 @@ body {
   position: relative;
   border: none;
   top: 65px;
+}
+
+.container .btn:hover {
+  cursor: pointer;
+  background-color: white;
 }
