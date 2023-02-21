@@ -1,6 +1,7 @@
 const button = document.querySelector(".container .btn"),
   advice = document.querySelector(".container p"),
-  adviceId = document.querySelector(".container header");
+  adviceId = document.querySelector(".container header"),
+  dice = document.querySelector(".container .btn img");
 
 button.addEventListener("click", () => {
   //fetching data from api and displaying
@@ -10,4 +11,5 @@ button.addEventListener("click", () => {
       advice.textContent = `" ${result.slip.advice} "`;
       adviceId.textContent = `advice #${result.slip.id}`;
     });
+  dice.classList.toggle("diceTransform");
 });

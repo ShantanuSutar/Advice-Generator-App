@@ -1,9 +1,11 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 200px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Neon-Green);
+  font-size: 13px;
 }
 :root {
   /* ### Primary */
@@ -24,6 +26,7 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--Grayish-Blue);
@@ -75,5 +78,11 @@ body {
 
 .container .btn:hover {
   cursor: pointer;
-  background-color: white;
+  box-shadow: hsl(150, 100%, 66%) 0px 0px 40px 0px;
+}
+.container button img {
+  transition: 0.8s;
+}
+.container button img.diceTransform {
+  transform: rotateY(180deg);
 }
