@@ -46,6 +46,7 @@ body {
   padding: 35px 40px;
   text-align: center;
   background-color: var(--Dark-Grayish-Blue);
+  transition: 1s;
 }
 .container header {
   text-transform: uppercase;
@@ -85,4 +86,19 @@ body {
 }
 .container button img.diceTransform {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 30%;
+    min-width: 350px;
+    height: 25%;
+    margin: 8rem 0;
+  }
+  .attribution {
+    margin-top: 20px;
+  }
+  .container .separator {
+    width: 15rem;
+  }
 }
